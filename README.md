@@ -8,6 +8,13 @@ cargo test
 
 Not packaged on its own; it is built into the packages that use it.
 
+`PlayerPresence` carries a permanent character UUID and whether that character
+is alive. `validate_world_link` rejects a link when both worlds contain a living
+character with the same UUID; dead memorials do not cause collisions. This is
+a shared validation rule, not implemented federation transport. The server
+currently uses core from Git; local core changes require the documented local
+Cargo override. Worldgen and Godot integration with core remains planned.
+
 License: MIT
 
 ## Part of Ishtaria

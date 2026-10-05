@@ -13,6 +13,8 @@ use uuid::Uuid;
 
 #[derive(Debug, Error, PartialEq, Eq)]
 pub enum IdError {
+    #[error("living player UUID occurs in both worlds: {0}")]
+    LivingPlayerCollision(Uuid),
     #[error("invalid server name: {0}")]
     ServerName(String),
     #[error("invalid player id: {0}")]
