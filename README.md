@@ -1,5 +1,7 @@
 # ishtaria-core
 
+<img src="https://raw.githubusercontent.com/VitexSoftware/ishtaria-client/main/assets/branding/emblem.png" alt="Ishtaria" width="96">
+
 Shared Rust core of Ishtaria: federated identifiers (`@user:server`, `server/uuidv7` item ids), item categories and ruleset versions. Linked into the server, the generator and – through GDExtension – the Godot client, so client prediction and the server share one implementation of the rules.
 
 ```sh
